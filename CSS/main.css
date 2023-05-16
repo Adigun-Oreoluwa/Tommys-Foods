@@ -5,10 +5,28 @@ margin: 0;
 body{
     width: 100%;
     height: 100vh;
+    background-color: ;
 }
-
+.navbar{
+    width: 100%;
+    box-shadow: 3px 3px rgb(218, 218, 222);
+}
+.carol{
+    width: 50%;
+    height:50% ;
+    margin-top: 60px;
+    box-shadow: 2px 2px gray;
+}
+.carousel{
+    width: 100%;
+    height: 100%;
+}
+.img{
+    height: 50% !important;
+}
 @media  screen and (max-width:500px) {
     .first-nav{
         display: none !important;
     }
+    
 }
