@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        
+    </nav>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOMMYS FOODS</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+html,body{
+  padding: 0;
+  margin: 0;
+}
+.nav-img{
+  width: 30%;
+  height: 60px;
+  /* background-color: yellow; */
+  padding: 0.1%;
+}
+.logo-img{
+  width: 100%;
+  height: 100%;
+}
+.img-pass{
+  width: 33%;
+  height: 100%;
+  background-color:#ffc107 ;
+}
+.img-club{
+  width: 33%;
+  height: 100%;
+  background-color: purple;
+}
+.down{
+  width: 33%;
+  height: 100%;
+  /* background-color: blueviolet; */
+}
+.modal{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.address{
+  width:50%;
+  height: 30%;
+}
+@media screen and (max-width:600px) {
+  
+}
+<nav class="navbar d-none  first-nav navbar-expand-sm bg-dark navbar-dark d-flex justify-content-around">
+
+  <!-- Links -->
+  <a class="navbar-brand" href="#">
+      <img onclick="al()" src="./IMAGES/fm-header-logo.svg" alt="">
+  </a>
+  <ul class="navbar-nav">
+      <li class="nav-item">
+          <div  class="dropdown">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                <i class="fa-solid fa-home"></i>
+                <span>Select Location</span>
+              </button>
+              <!-- <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">Akobo</a>
+                <a class="dropdown-item" href="#">Bodija</a>
+                <a class="dropdown-item" href="#">Dugbe</a>
+              </div>
+            </div> -->
+      </li>
+      
+    </ul>
+  
+    <!-- Navbar text-->
+    <span class="navbar-text search-location">
+      <form class="form-inline" action="/action_page.php">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" >
+          <!-- <span><button class="btn btn-success" type="submit">Search</button></span> -->
+        </form>
+    </span>
+    <div class="d-non others">
+      <span>
+        <button class="btn btn-danger Offers">Offers</button>
+      </span>
+      <span>
+        <button class="btn btn-danger">Help center</button>
+      </span>
+      <span>
+        <button class="btn btn-danger"><i class="fa-solid fa-user"></i></button>
+      </span>
+      <span>
+        <button class="btn btn-danger"><i class="fa-solid fa-cart-shopping text-light"></i></button>
+      </span>
+    </div>
+  </nav>
+<body >
+  <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+
+    <!-- Links -->
+    <a class="navbar-brand" href="#">
+        <img onclick="al()" src="./IMAGES/fm-header-logo.svg" alt="">
+    </a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <div  class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa-solid fa-home"></i>
+                  <span>Quick select</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">Akobo</a>
+                  <a class="dropdown-item" href="#">Bodija</a>
+                  <a class="dropdown-item" href="#">Dugbe</a>
+                </div>
+              </div>
+        </li>
+        <li>
+            <button class="btn btn-primary">Go TO Map</button>
+        </li>
+      </ul>
+    
+      <!-- Navbar text-->
+      <span class="navbar-text">
+        Navbar text
+      </span>
+    
+    </nav>
+    <section id="body">
+    <nav class="navbar navbar-expand-sm bg-light navbar-dark top-nav justify-content-around">
+        <a class="navbar-brand" href="#">
+         <img src="./IMAGES/fm-header-logo.svg" class="logo-img" alt="Logo" >
+       </a>
+       <div>
+        <span>Deliver to:</span>
+        <span>
+            <button onclick="locate()" class="btn btn-light" href="">Akobo,ojurin..... <i class="fa-solid fa-angle-down"></i></button>
+        </span>
+       </div>
+       <div class="nav-img d-flex justify-content-between ">
+        <div class="img-pass d-flex justify-content-around text-dark align-items-center flex-wrap"><i class="fa-solid fa-star"></i><h6>Fresh pass</h6> <h6>Get 20% off</h6></div>
+        <div class="img-club d-flex justify-content-around text-light align-items-center "><i class="fa-solid fa-leaf text-light"></i> <h6>Try Freshclub</h6></div>
+        <div class="down d-flex align-items-center justify-content-center bg-light "><h6><a href="">Download App</a></h6></div>
+       </div>
+     </nav>
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        ..
+     </nav>
+    </section>
+     <div class="modal bg-dark " id='modal' style="display: none; ">
+        <div class="address btn-danger">
+            <div><h3></h3></div>
+        </div>
+    </div>
+</body>
+<script src="./JAVA SCRIPT/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
+</body>
+<script>
+    let modal=document.getElementById('myModal')
+    function call(params) {
+        
+
+
+
+
+
+
+
+
+
+
+
+        
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
+
+<div class="whole">
+  <nav class="navbar first-nav  bg-light navbar-dark fixed-to ">
+    <!-- Brand -->
+    <img src="./IMAGES/fm-header-logo.svg" alt="">
+  
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon bg-dark"></span>
+    </button>
+  
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <span>
+            <button class="btn btn-danger"><i class="fa-solid fa-user"></i></button>
+          </span>
+          <span>
+            <button class="btn btn-danger"><i class="fa-solid fa-cart-shopping text-light"></i></button>
+          </span>
+          <span>
+            <button class="btn btn-danger Offers">Offers</button>
+          </span>
+            <button class="btn btn-danger">Help center</button>
+          </span>
+          
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- <nav class="first-nav d-none d-flex">
+      <div class="bg-succes" style="height:100%; width: 20%;"><img src="./IMAGES/fm-header-logo.svg" alt=""></div>
+      <div style="height:100%; width:20%;" class="bg-primay">
+        <a href="">Location <i class="fa-solid fa-angle-down"></i></a>
+      </div>
+      <div class=" d-flex justify-content-end flex-row bg-succes align-items-center btns" style="height:100%;width: 60%;">
+        <div class="bg-primary d-flex align-items-center" style="height: 100%; width: 20%;">
+          <input type="text" style="width: 100%; height: 90%;">
+        </div>
+        <div class="d-flex align-items-center justify-content-center" style="height:100%; width: 15%;">
+          <button class="btn btn-danger " style="width: 70%;" ><i class="fa-solid fa-user"></i></button>
+        </div>
+        <div class="d-flex align-items-center justify-content-center" style="height:100%; width: 15%;">
+          <button class="btn btn-danger " style="width: 70%;" ><i class="fa-solid fa-cart-shopping text-light"></i></button>
+        </div>
+        <div class="d-flex align-items-center justify-content-center" style="height:100%; width: 15%;" class="bg-dark">
+          <button class="btn btn-danger " style="width: 70%;" >Offers</button>
+        </div>
+        <div class="d-flex align-items-center justify-content-center" style="height:100%; width: 15%;">
+          <button class="btn btn-danger " style="width: 70%;" >Help</button>
+        </div>
+        
+      </div>
+      
+    </nav> -->
+    <nav class="navbar  sec-navbar   bg-light navbar-dark fixed-top ">
+      <!-- Brand -->
+      <img src="./IMAGES/fm-header-logo.svg" alt="">
+    
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon bg-dark"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <span>
+              <button class="btn btn-danger"><i class="fa-solid fa-user"></i></button>
+            </span>
+            <span>
+              <button class="btn btn-danger"><i class="fa-solid fa-cart-shopping text-light"></i></button>
+            </span>
+            <span>
+              <button class="btn btn-danger Offers">Offers</button>
+            </span>
+              <button class="btn btn-danger">Help center</button>
+            </span>
+            
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+  <nav class="navbar sec-navbar bg-light navbar-expand-sm d-flex   flex-row justify-content-between  navbar-dark  ">
+    <span class="bg-prim d-flex" style="width: 50%; height: 100%;">
+      <button class="btn btn-danger  delivery-btn">Deliver to <i class="fa-solid fa-angle-down"></i></button>
+    </span>
+    <span class="d-flex " style="width: 50%; height: 100%; padding:0.1%;">
+      <input type="text" placeholder="Search" class="Search delicy-search">
+      <!-- <button class="btn btn-danger ">Search</button> -->
+    </span>
+  </nav>
+  <div class="bg-secondary" style="width: 20%; height: 200%;">
+
+  </div>
+</div>

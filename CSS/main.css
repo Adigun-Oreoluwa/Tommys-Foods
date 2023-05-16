@@ -1,0 +1,14 @@
+html,body{
+padding: 0;
+margin: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+@media  screen and (max-width:500px) {
+    .first-nav{
+        display: none !important;
+    }
+}
